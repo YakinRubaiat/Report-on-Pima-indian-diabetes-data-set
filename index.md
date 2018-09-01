@@ -83,10 +83,10 @@ Here we can see in the first block of the histogram contain a pretty much same n
 
 As we can see as glucose and BMI level increase, the risk for diabetes increases significantly.  So it provides us with a useful model. By analyzing different graph and by investing which feature affect the most in diabetes, we find four feature.
 
-1.Glucose  
-2.BMI
-3.Age
-4.DiabetesPedigreeFunction
+1.Glucose.  
+2.BMI.
+3.Age.
+4.DiabetesPedigreeFunction.
 
 
 
