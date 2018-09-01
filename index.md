@@ -71,14 +71,15 @@ There are many feature that can not affect the model.If we use this kind of feat
 
 Here we can see in the first block of the histogram contain a pretty much same number of element from both classes (0 or 1). And it still maintains this ratio when the Skin Thickness is increased. So this can't be an import feature for the model.
               <center> <img src="Picture/02.png" alt="hi" align="middle" class="inline"/> </center>
-      ```        
-                     Figure : BMI feature graph from pima indian dataset(Here X-axis contain 
-                                   And Y-axis contain the “Number of patient”)
-      ```                             
-              <center> <img src="Picture/03.png" alt="hi" align="middle" class="inline"/> </center>
+             
+                Figure : BMI feature graph from pima indian dataset(Here X-axis contain 
+                            And Y-axis contain the “Number of patient”)
+                                   
+                             
+   <center> <img src="Picture/03.png" alt="hi" align="middle" class="inline"/> </center>
               
-                       Figure : Glucose level graph for pima indian dataset(Here X-axis contain 
-                                 glucose level,Y-axis contain “Number of patient”)
+                Figure : Glucose level graph for pima indian dataset(Here X-axis contain 
+                           glucose level,Y-axis contain “Number of patient”)
                                 
 
 As we can see as glucose and BMI level increase, the risk for diabetes increases significantly.  So it provides us with a useful model. By analyzing different graph and by investing which feature affect the most in diabetes, we find four feature.
@@ -128,7 +129,7 @@ K-means is a very popular algorithm for clustering It mainly uses for unsupervis
 We apply k-means algorithm by 8 feature data. After applying this we get the result like this,
              <center> <img src="Picture/01.png" alt="hi" align="middle" class="inline"/> </center>
              
-                              Figure : k-means clustering result in pima-indian dataset.
+                     Figure : k-means clustering result in pima-indian dataset.
                               
 We use "K-means" algorithm result as an input feature which gives a good advantage in accuracy. For doing "k-means clustering" algorithm we use "Weka" is a collection of machine learning algorithms for data mining tasks made by "Machine Learning Group at the University of Waikato".It contains tools for data preparation, classification, regression, clustering, association rules mining, and visualization. If you go to Filters -> Unsupervised -> attribute -> Addcluster, It will simply add up "Simple K-means" algorithm. 
 
