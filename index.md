@@ -2,15 +2,17 @@
 
 This report about the analysis of a Pima-Indian dataset and how we get 85 percent accuracy. This process can be divided into three part. First, Recover the missing Data. Second, Select the useful feature by greedy based feature selection algorithm. Third, Use MLP(Multilayer Perceptron) algorithm for Train the model. 
 
-###2. Introdiction
+## 2. Introdiction
 
 "Diabetes mellitus" is an epidemic problem nowadays. It increases in the 21 century for some reason like: increase the amount of weight, taking more junk food and as it can be passed down in the generation. As of 2015, an estimated 415 million people had diabetes worldwide and trends suggested the rate would continue to rise. Diabetes has some serious long-term complications include cardiovascular disease, stroke, chronic kidney disease, foot ulcers, and damage to the eyes. For this reason, we need to put more focus on this problem. 
+
+<a href="fb.com">Home</a>
 
 There are mainly 3 kinds of diabetes. 1. Type 1 DM(pancreas failure to produce enough insulin) 2. Type 2 DM (The most common cause is excessive body weight and insufficient exercise) 3. Gestational diabetes (occurs in pregnant women without a previous history). It should be pointed out that type 2 DM making up about 90% of the cases. 
 
 "Pima Indian dataset" originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective of the dataset is to diagnostically predict whether or not a patient has diabetes, based on certain diagnostic measurements included in the dataset. Several constraints were placed on the selection of these instances from a larger database. In particular, all patients here are females at least 21 years old of Pima Indian heritage. The datasets consist of several medical predictor variables and one target variable, Outcome. Predictor variables include the number of pregnancies the patient has had, their BMI, insulin level, age, and so on.
 
-###3. Related works
+## 3. Related works
 
 There are several other research on this dataset. Some work I want to mention, 1.Title: "Medical Diagnosis on Piman Indian Diabetes" with 80.21 percent accuracy. They Use the general regression neural network (GRNN) with Neural network structure : (32,  16, 1) and learning rate: 0.25. They use "MatLab toolkit"  to implement this thing. 2.Title: "Type 2 diabetes mellitus prediction model based on data mining" with 95.41 percent accuracy. They transformed this numeric attribute into a nominal attribute. The value 0 indicates non-pregnant and 1 indicates pregnant. The complexity of the dataset was reduced by this process. Then they use "K-means algorithm" to remove noise data. Lastly, The logistic regression algorithm to classify the remaining data. They use "Weka" toolkit to implement all of this. 3.  Title: Rule extraction using Recursive-Rule extraction algorithm with J48graft combined with sampling selection techniques for the diagnosis of type 2 diabetes mellitus in the Pima Indian dataset.  With 86.09 percent accuracy. They use Re-Rx with J48graft and 2 layer of Multilayer perceptron algorithm.  4. Title: Classification of Pima indian diabetes dataset using naive bayes with genetic algorithm as an attribute selection with 79.13 percent accuracy. They use Genetic algorithm for feature selection and Naive bayes for main classification.  
 
