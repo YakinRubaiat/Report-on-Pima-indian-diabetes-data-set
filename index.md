@@ -65,7 +65,7 @@ The source code will be something like that,
 
 There are many feature that can not affect the model.If we use this kind of feature for training the model then it’s just add up the computational power.  
             
-                <center> <img src="Picture/01.png" alt="hi" align="middle" class="inline"/> </center>
+  <center> <img src="Picture/01.png" alt="hi" align="middle" class="inline"/> </center>
                       
           Figure: “Skin Thickness” graph for pima indian dataset. Here X-axis contain skin
                                     thickness, Y-axis Contain “Number of patient”.  
