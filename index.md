@@ -16,7 +16,7 @@ There are mainly 3 kinds of diabetes. 1. Type 1 DM(pancreas failure to produce e
 
 There are several other research on this dataset. Some work I want to mention, 1.Title: "Medical Diagnosis on Piman Indian Diabetes" with 80.21 percent accuracy. They Use the general regression neural network (GRNN) with Neural network structure : (32,  16, 1) and learning rate: 0.25. They use "MatLab toolkit"  to implement this thing. 2.Title: "Type 2 diabetes mellitus prediction model based on data mining" with 95.41 percent accuracy. They transformed this numeric attribute into a nominal attribute. The value 0 indicates non-pregnant and 1 indicates pregnant. The complexity of the dataset was reduced by this process. Then they use "K-means algorithm" to remove noise data. Lastly, The logistic regression algorithm to classify the remaining data. They use "Weka" toolkit to implement all of this. 3.  Title: Rule extraction using Recursive-Rule extraction algorithm with J48graft combined with sampling selection techniques for the diagnosis of type 2 diabetes mellitus in the Pima Indian dataset.  With 86.09 percent accuracy. They use Re-Rx with J48graft and 2 layer of Multilayer perceptron algorithm.  4. Title: Classification of Pima indian diabetes dataset using naive bayes with genetic algorithm as an attribute selection with 79.13 percent accuracy. They use Genetic algorithm for feature selection and Naive bayes for main classification.  
 
-###4. Work Process
+## 4. Work Process
 
 We can define our work in 2 ways
 
@@ -33,9 +33,9 @@ We can define our work in 2 ways
 Two methods are different for practical reasons. The first one takes less compulsion power in real-world implementation because when a new example came in, we just need to feed the new data to the previously built-in model. But in the second case,  if a new example come-in we need to calculate it's k-means cluster first for the new data before feeding to the model. 
 
 
-###4.1. Getting 85 percent accuracy
+## 4.1. Getting 85 percent accuracy
 
-##4.1.1. Data recovery
+### 4.1.1. Data recovery
 
 If you observe the Pima Indian diabetes, you find that there are lots of missing data.  Some feature like blood pressure, Insulin can't be zero in a normal person.
 Number of zero in different feature
@@ -57,9 +57,9 @@ Pima indian dataset is very small, 768 total example. If we delete any training 
 There is a useful library called "Pandas" that we can use for our purpose.  First, we replace the missing data with "np.NaN" with "replace" method. After that, we use "fillna" method to replace them with their mean value.
 The source code will be something like that,
 
-                                       dataset.fillna(dataset.mean(), inplace=True)
+                                dataset.fillna(dataset.mean(), inplace=True)
 
-4.1.2. Feature selection 
+### 4.1.2. Feature selection 
 
 There are many feature that can not affect the model.If we use this kind of feature for training the model then it’s just add up the computational power. 
 
@@ -83,15 +83,15 @@ Here we can see in the first block of the histogram contain a pretty much same n
 
 As we can see as glucose and BMI level increase, the risk for diabetes increases significantly.  So it provides us with a useful model. By analyzing different graph and by investing which feature affect the most in diabetes, we find four feature.
 
-Glucose  
-BMI
-Age
-DiabetesPedigreeFunction
+1.Glucose  
+2.BMI
+3.Age
+4.DiabetesPedigreeFunction
 
 
 
 
-4.1.3. MLP Classifier
+### 4.1.3. MLP Classifier
 
 A multilayer perceptron (MLP) is a class of feedforward artificial neural network. We use this algorithm because "MLP"s are used in research for their ability to solve problems stochastically, which often allows approximate solutions for extremely complex problems like fitness approximation. 
 
@@ -114,9 +114,9 @@ By applying this parameter we get the result,
 2.Test Set: MLPClassifier  mean accuracy:  85.153
 
 
-4.2. Getting 77 percent accuracy
+## 4.2. Getting 77 percent accuracy
 
-4.2.1. K-means Algorithm
+### 4.2.1. K-means Algorithm
 
 K-means is a very popular algorithm for clustering It mainly uses for unsupervised data. In the Pima Indian dataset, there are many miss-classified examples that can turn bad effect for the model. So for noise cancelling and getting an extra feature by clustering data we do k-means algorithm. 
 
@@ -127,7 +127,7 @@ We apply k-means algorithm by 8 feature data. After applying this we get the res
                               Figure : k-means clustering result in pima-indian dataset.
 We use "K-means" algorithm result as an input feature which gives a good advantage in accuracy. For doing "k-means clustering" algorithm we use "Weka" is a collection of machine learning algorithms for data mining tasks made by "Machine Learning Group at the University of Waikato".It contains tools for data preparation, classification, regression, clustering, association rules mining, and visualization. If you go to Filters -> Unsupervised -> attribute -> Addcluster, It will simply add up "Simple K-means" algorithm. 
 
-4.2.2. Feature Selection
+### 4.2.2. Feature Selection
 
 Feature selection is very important when the bad feature can affect the model accuracy. So we do our feature selection in two ways,
 1. Iterative process(To see which feature work best for the model)
@@ -141,10 +141,11 @@ In the last, we choose five feature,
 5. DiabetesPedigreeFunction
 6. Cluster(Output of k-means algorithm)
 
-4.2.3. Classifier
+### 4.2.3. Classifier
 
 We try many different kinds of the classifier to examine which method works well. Different classifier like the "decision tree", "J48", "MLP", "Logistic regression"  has different method to evaluate the model. So result of different classifier,
 
+```
 Logistic regression accuracy,
 
 Correctly Classified Instances         592               77.0833 %
@@ -155,10 +156,12 @@ Confusion Matrix
    a     b    <-- classified as
  440  60  |   a = tested_negative
  116 152 |   b = tested_positive
+ 
+ ```
 
 
 
-
+```
 MLP classifier accuracy,
 
 Correctly Classified Instances         579               75.3906 %
@@ -169,21 +172,24 @@ Confusion Matrix
    a    b    <-- classified as
  407  93  |   a = tested_negative
   96 172  |   b = tested_positive
-
+```
+```
 Random Forest accuracy,
 
 Correctly Classified Instances         576               75      %
 Incorrectly Classified Instances       192               25      %
+
 
 Confusion Matrix
 
    a     b     <-- classified as
   417  83   |   a = tested_negative
  109 159   |   b = tested_positive
+ ```
 
 Logistic regression is most suitable for this kind of problem because it’s cost function targeted to make zero, one classifier. For this reason, this works well compared to MLP and Random Forest. 
 
-5. Conclusion and future work
+## 5. Conclusion and future work
 
 Within two methods, number 1 is more acceptable because it takes less computational power and gives us a much higher accuracy. But the Second method is easy to implement.  By this two method, we can see that how we can train a model that can predict someone diabetes by taking some input feature like Glucose, BMI, Age. 
 
