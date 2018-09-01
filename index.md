@@ -170,7 +170,7 @@ Confusion Matrix
  116 152 |   b = tested_positive 
  ```
 
-### MLP classifier accuracy,
+### MLP classifier accuracy
 
 ```
 Correctly Classified Instances         579               75.3906 %
@@ -183,7 +183,7 @@ Confusion Matrix
   96 172  |   b = tested_positive
 ```
 
-### Random Forest accuracy,
+### Random Forest accuracy
 
 ```
 Correctly Classified Instances         576               75      %
