@@ -4,13 +4,13 @@ This report about the analysis of a Pima-Indian dataset and how we get 85 percen
 
 ## 2. Introdiction
 
-"Diabetes mellitus" is an epidemic problem nowadays. It increases in the 21 century for some reason like: increase the amount of weight, taking more junk food and as it can be passed down in the generation. As of 2015, an estimated 415 million people had diabetes worldwide and trends suggested the rate would continue to rise. Diabetes has some serious long-term complications include cardiovascular disease, stroke, chronic kidney disease, foot ulcers, and damage to the eyes. For this reason, we need to put more focus on this problem. 
+<a herf="https://en.wikipedia.org/wiki/Diabetes_mellitus">"Diabetes mellitus"</a> is an epidemic problem nowadays. It increases in the 21 century for some reason like: increase the amount of weight, taking more junk food and as it can be passed down in the generation. As of 2015, an estimated 415 million people had diabetes worldwide and trends suggested the rate would continue to rise. Diabetes has some serious long-term complications include cardiovascular disease, stroke, chronic kidney disease, foot ulcers, and damage to the eyes. For this reason, we need to put more focus on this problem. 
 
 <a href="fb.com">Home</a>
 
 There are mainly 3 kinds of diabetes. 1. Type 1 DM(pancreas failure to produce enough insulin) 2. Type 2 DM (The most common cause is excessive body weight and insufficient exercise) 3. Gestational diabetes (occurs in pregnant women without a previous history). It should be pointed out that type 2 DM making up about 90% of the cases. 
 
-"Pima Indian dataset" originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective of the dataset is to diagnostically predict whether or not a patient has diabetes, based on certain diagnostic measurements included in the dataset. Several constraints were placed on the selection of these instances from a larger database. In particular, all patients here are females at least 21 years old of Pima Indian heritage. The datasets consist of several medical predictor variables and one target variable, Outcome. Predictor variables include the number of pregnancies the patient has had, their BMI, insulin level, age, and so on.
+<a herf="https://www.kaggle.com/uciml/pima-indians-diabetes-database/home">"Pima Indian dataset"</a> originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective of the dataset is to diagnostically predict whether or not a patient has diabetes, based on certain diagnostic measurements included in the dataset. Several constraints were placed on the selection of these instances from a larger database. In particular, all patients here are females at least 21 years old of Pima Indian heritage. The datasets consist of several medical predictor variables and one target variable, Outcome. Predictor variables include the number of pregnancies the patient has had, their BMI, insulin level, age, and so on.
 
 ## 3. Related works
 
