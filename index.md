@@ -156,9 +156,10 @@ In the last, we choose five feature,
 
 We try many different kinds of the classifier to examine which method works well. Different classifier like the "decision tree", "J48", "MLP", "Logistic regression"  has different method to evaluate the model. So result of different classifier,
 
-```
-Logistic regression accuracy,
 
+### Logistic regression accuracy
+
+```
 Correctly Classified Instances         592               77.0833 %
 Incorrectly Classified Instances       176               22.9167 %
 
@@ -166,15 +167,12 @@ Confusion Matrix
 
    a     b    <-- classified as
  440  60  |   a = tested_negative
- 116 152 |   b = tested_positive
- 
+ 116 152 |   b = tested_positive 
  ```
 
-
+### MLP classifier accuracy,
 
 ```
-MLP classifier accuracy,
-
 Correctly Classified Instances         579               75.3906 %
 Incorrectly Classified Instances       189               24.6094 %
 
@@ -184,9 +182,10 @@ Confusion Matrix
  407  93  |   a = tested_negative
   96 172  |   b = tested_positive
 ```
-```
-Random Forest accuracy,
 
+### Random Forest accuracy,
+
+```
 Correctly Classified Instances         576               75      %
 Incorrectly Classified Instances       192               25      %
 
