@@ -21,11 +21,13 @@ There are several other research on this dataset. Some work I want to mention, 1
 We can define our work in 2 ways
 
 1.  Getting 85 percent accuracy by
+
            1.1. Data recovery.
            1.2. Feature selection.
            1.3. MLP Classifier
 
 2.  Getting 77 percent accuracy by
+
             2.1. K-means Algorithm.
             2.2. Feature selection.
             2.3. Classifier
@@ -83,12 +85,13 @@ Here we can see in the first block of the histogram contain a pretty much same n
 
 As we can see as glucose and BMI level increase, the risk for diabetes increases significantly.  So it provides us with a useful model. By analyzing different graph and by investing which feature affect the most in diabetes, we find four feature.
 
-1.Glucose.  
+1.Glucose.
+
 2.BMI.
+
 3.Age.
+
 4.DiabetesPedigreeFunction.
-
-
 
 
 ### 4.1.3. MLP Classifier
