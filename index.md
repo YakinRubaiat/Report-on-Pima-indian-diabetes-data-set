@@ -84,14 +84,12 @@ Here we can see in the first block of the histogram contain a pretty much same n
                         glucose level,Y-axis contain “Number of patient”)
 
 As we can see as glucose and BMI level increase, the risk for diabetes increases significantly.  So it provides us with a useful model. By analyzing different graph and by investing which feature affect the most in diabetes, we find four feature.
-
+```
 1.Glucose.
-
 2.BMI.
-
 3.Age.
-
 4.DiabetesPedigreeFunction.
+```
 
 
 ### 4.1.3. MLP Classifier
@@ -99,22 +97,25 @@ As we can see as glucose and BMI level increase, the risk for diabetes increases
 A multilayer perceptron (MLP) is a class of feedforward artificial neural network. We use this algorithm because "MLP"s are used in research for their ability to solve problems stochastically, which often allows approximate solutions for extremely complex problems like fitness approximation. 
 
 There are many hyperparameters for MLP classifier, like alpha, Hidden-layer size, solver, learning-rate decay etc. We try the different combination of them by iterative and randomly.  First, we get poorer accuracy, it's for high bias problem(because it gives test and training accuracy pretty much same) We can do the solution in high bias like,
-
+```
 1. Make a bigger network.
 2. Training longer.
 3. Search for different NN(Neural network) architecture.
 We choose option one and three because we have a very small number of training set so training much longer not the very effective process to remove high bias problem. 
+```
 
 Lastly, We find suitable hyperparameter 
-
+```
 1. solver=lbfgs
 2. alpha=1e-5
 3. hidden_layer_sizes=(15,7,7,3) (First layer number of node 15,second layer number of node number 7,third layer number 7,fourth layer node number 3,last layer node number 1)
+```
 
 By applying this parameter we get the result,
-
+```
 1.Training Set: MLPClassifier  mean accuracy:  74.733
 2.Test Set: MLPClassifier  mean accuracy:  85.153
+```
 
 
 ## 4.2. Getting 77 percent accuracy
