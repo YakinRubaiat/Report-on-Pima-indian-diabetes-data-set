@@ -40,24 +40,31 @@ Two methods are different for practical reasons. The first one takes less compul
 If you observe the Pima Indian diabetes, you find that there are lots of missing data.  Some feature like blood pressure, Insulin can't be zero in a normal person.
 Number of zero in different feature
 
+```
 1. Insulin: 374
 2. SkinThickness : 227
 3. BloodPressure : 35
 4. BMI : 11
 5. Glucose : 5
 
+```
+
 This missing data can affect the main result. When we build a model with this data, the model will be misled. There are many different methods to recover the data. Like,
+
+```
 
 1. Delete the data from the dataset(this way it can't affect the model) 
 2. Replace the missing data with there all feature data "mean". 
 3. Replace the missing data with the most likely value of this feature.
+
+```
 
 Pima indian dataset is very small, 768 total example. If we delete any training data the model can be end up with high biased. So we can’t take option one.Different person has the different level of insulin level. If we transfer the high number of data with most likely value, we maybe end up with high variance problem. So, our best option is number two.    
 
 There is a useful library called "Pandas" that we can use for our purpose.  First, we replace the missing data with "np.NaN" with "replace" method. After that, we use "fillna" method to replace them with their mean value.
 The source code will be something like that,
 
-                                dataset.fillna(dataset.mean(), inplace=True)
+                            dataset.fillna(dataset.mean(), inplace=True)
 
 ### 4.1.2. Feature selection 
 
