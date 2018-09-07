@@ -1,6 +1,6 @@
 ## 1. Abstract
 
-In this study, we have proposed a model based on neural network for predicting type 2 diabetes mellitus (T2DM). The main problems that we are trying to solve are to find which type of model works for best for predicting diabetes. The analysis is comprised of two parts, by applying data-recovery with the neural network and by applying k-means with the neural network. The consultation shows that why some model is good at predicting diabetes and is it computationally expensive or not.  
+In this study, we have proposed an analysis of different method based on a neural network for predicting type 2 diabetes mellitus (T2DM). The main problems that we are trying to solve are to find which type of model works best for predicting diabetes. The analysis is comprised of two parts, by applying data-recovery with the neural network and by applying k-means with the neural network. The consultation shows that why some model is good at predicting diabetes and is it computationally expensive or not.  
 
 ## 2. Introdiction
 
