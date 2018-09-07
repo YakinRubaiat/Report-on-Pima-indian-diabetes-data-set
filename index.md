@@ -1,6 +1,6 @@
 ## 1. Abstract
 
-This report about the analysis of a Pima-Indian dataset and how we get 85 percent accuracy. This process can be divided into three part. First, recover the missing Data. Second, select the useful feature by greedy based feature selection algorithm. Third, use the MLP(Multilayer Perceptron) algorithm for training the model. 
+In this study, we have proposed a model based on neural network for predicting type 2 diabetes mellitus (T2DM). The main problems that we are trying to solve are to find which type of model works for best for predicting diabetes. The analysis is comprised of two parts, by applying data-recovery with the neural network and by applying k-means with the neural network. The consultation shows that why some model is good at predicting diabetes and is it computationally expensive or not.  
 
 ## 2. Introdiction
 
@@ -18,13 +18,13 @@ There are several other research on this dataset. Some work I want to mention, 1
 
 We can define our work in 2 ways
 
-1.  Getting 85 percent accuracy by
+1.  By applying data recovery and neural network model
 
            1.1. Data recovery.
            1.2. Feature selection.
            1.3. MLP Classifier
 
-2.  Getting 77 percent accuracy by
+2.  By applying K-means and neural network model
 
             2.1. K-means Algorithm.
             2.2. Feature selection.
