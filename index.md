@@ -1,6 +1,6 @@
 ## 1. Abstract
 
-This report about the analysis of a Pima-Indian dataset and how we get 85 percent accuracy. This process can be divided into three part. First, Recover the missing Data. Second, Select the useful feature by greedy based feature selection algorithm. Third, Use MLP(Multilayer Perceptron) algorithm for Train the model. 
+This report about the analysis of a Pima-Indian dataset and how we get 85 percent accuracy. This process can be divided into three part. First, recover the missing Data. Second, select the useful feature by greedy based feature selection algorithm. Third, use the MLP(Multilayer Perceptron) algorithm for training the model. 
 
 ## 2. Introdiction
 
@@ -8,7 +8,7 @@ This report about the analysis of a Pima-Indian dataset and how we get 85 percen
 
 There are mainly 3 kinds of diabetes. 1. Type 1 DM(pancreas failure to produce enough insulin) 2. Type 2 DM (The most common cause is excessive body weight and insufficient exercise) 3. Gestational diabetes (occurs in pregnant women without a previous history). It should be pointed out that type 2 DM making up about 90% of the cases. 
 
-<a href="https://www.kaggle.com/uciml/pima-indians-diabetes-database/home">"Pima Indian dataset"</a> originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective of the dataset is to diagnostically predict whether or not a patient has diabetes, based on certain diagnostic measurements included in the dataset. Several constraints were placed on the selection of these instances from a larger database. In particular, all patients here are females at least 21 years old of Pima Indian heritage. The datasets consist of several medical predictor variables and one target variable, Outcome. Predictor variables include the number of pregnancies the patient has had, their BMI, insulin level, age, and so on.
+<a href="https://www.kaggle.com/uciml/pima-indians-diabetes-database/home">"Pima Indian dataset"</a> originally from the National "Institute of Diabetes and Digestive and Kidney Diseases". The objective of the dataset is to diagnostically predict whether or not a patient has diabetes, based on certain diagnostic measurements included in the dataset. Several constraints were placed on the selection of these instances from a larger database. In particular, all patients here are females at least 21 years old of Pima Indian heritage. The datasets consist of several medical predictor variables and one target variable, Outcome. Predictor variables include the number of pregnancies the patient has had, their BMI, insulin level, age, and so on.
 
 ## 3. Related works
 
@@ -37,8 +37,8 @@ Two methods are different for practical reasons. The first one takes less compul
 
 ### 4.1.1. Data recovery
 
-If you observe the Pima Indian diabetes, you find that there are lots of missing data.  Some feature like blood pressure, Insulin can't be zero in a normal person.
-Number of zero in different feature
+Pima indian dataset contain lot's of missing data.Some feature like blood pressure, Insulin can't be zero in a normal person.
+Number of zero in different feature,
 
 ```
 1. Insulin: 374
@@ -49,7 +49,7 @@ Number of zero in different feature
 
 ```
 
-This missing data can affect the main result. When we build a model with this data, the model will be misled. There are many different methods to recover the data. Like,
+This missing data can affect to building the model. When we build a model with this data, the model will be misled. There are many different methods to recover the data. Like,
 
 ```
 
@@ -59,16 +59,16 @@ This missing data can affect the main result. When we build a model with this da
 
 ```
 
-Pima indian dataset is very small, 768 total example. If we delete any training data the model can be end up with high biased. So we can’t take option one.Different person has the different level of insulin level. If we transfer the high number of data with most likely value, we maybe end up with high variance problem. So, our best option is number two.    
+Pima indian dataset is very small, 768 total example. If we delete any training data the model can be end up with high biased. So we can’t take option one.Different person has the different level of insulin level. If we transfer the high number of data with most likely value, we maybe end up with high variance problem. So,best option is number two.    
 
-There is a useful library called "Pandas" that we can use for our purpose.  First, we replace the missing data with "np.NaN" with "replace" method. After that, we use "fillna" method to replace them with their mean value.
+There is a useful library called "Pandas" that can use for this purpose. First, we replace the missing data with "np.NaN" with "replace" method. After that, we use "fillna" method to replace them with their mean value.
 The source code will be something like that,
 
                             dataset.fillna(dataset.mean(), inplace=True)
 
 ### 4.1.2. Feature selection 
 
-There are many feature that can not affect the model.If we use this kind of feature for training the model then it’s just add up the computational power.  
+There are many feature that can not affect the model.By using this kind of feature for training the model then it’s just add up the computational power.  
             <center> <img src="Picture/01.png" alt="hi" align="middle" class="inline"/> </center>
                       
           Figure: “Skin Thickness” graph for pima indian dataset. Here X-axis contain skin
@@ -87,7 +87,7 @@ Here we can see in the first block of the histogram contain a pretty much same n
                            glucose level,Y-axis contain “Number of patient”)
                                 
 
-As we can see as glucose and BMI level increase, the risk for diabetes increases significantly.  So it provides us with a useful model. By analyzing different graph and by investing which feature affect the most in diabetes, we find four feature.
+Conclude by this data when glucose and BMI level increase, the risk for diabetes increases significantly.  So it provides us with a useful model. By analyzing the different graph and by investing which feature affect the most in diabetes, we find four feature.
 ```
 1.Glucose.
 2.BMI.
