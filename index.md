@@ -8,6 +8,8 @@ In this study, we have proposed an analysis of different method based on a neura
 
 There are mainly 3 kinds of diabetes. 1. Type 1 DM(pancreas failure to produce enough insulin) 2. Type 2 DM (The most common cause is excessive body weight and insufficient exercise) 3. Gestational diabetes (occurs in pregnant women without a previous history). It should be pointed out that type 2 DM making up about 90% of the cases. 
 
+As the system of medical institutions become larger and larger, it causes great difficulties in getting useful information for decision support. Normal data analysis has become incapable and systems for efficient computer-based analysis are required. It has been proven that the advantages of introducing machine learning into the medical study are to increase diagnostic accuracy, to overcome costs and to reduce human resources. 
+
 <a href="https://www.kaggle.com/uciml/pima-indians-diabetes-database/home">"Pima Indian dataset"</a> originally from the National "Institute of Diabetes and Digestive and Kidney Diseases". The objective of the dataset is to diagnostically predict whether or not a patient has diabetes, based on certain diagnostic measurements included in the dataset. Several constraints were placed on the selection of these instances from a larger database. In particular, all patients here are females at least 21 years old of Pima Indian heritage. The datasets consist of several medical predictor variables and one target variable, Outcome. Predictor variables include the number of pregnancies the patient has had, their BMI, insulin level, age, and so on.
 
 ## 3. Related works
